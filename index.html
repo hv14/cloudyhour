@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cloudy Hour</title>
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloudy Hour</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-    <body>
-        <script type="module" src="index.js"></script>
+  <body>
+    <script type="module" src="index.js"></script>
 
-        <div data-scroll-container>
-            <section data-scroll-section>
-                <h1 class="left-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">Beautiful Holiday Destinations</h1>
-                <p data-scroll>👋</p>
-            </div>
-            <section data-scroll-section>
-                <h1 data-scroll data-scroll-speed="1">What's up?</h1>
-                <p data-scroll data-scroll-speed="2">😬</p>
-            </div>
+    <div data-scroll-container class="content">
+      <section data-scroll-section class="title">
+        <!-- <h1  data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">Beautiful  Destinations</h1> -->
+        <!-- <h1 data-scroll-section class="big"> -->
+        <div class="name-letters inline">
+          <div data-scroll data-scroll-speed="7">H</div>
+          <div data-scroll data-scroll-speed="10">I</div>
+          <div data-scroll data-scroll-speed="4">M</div>
+          <div data-scroll data-scroll-speed="7">A</div>
+          <div data-scroll data-scroll-speed="12">N</div>
+          <div data-scroll data-scroll-speed="5">I</div>
         </div>
-    </body>
+
+        <div class="identifiers inline">
+          <div
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+          >
+            Coder
+          </div>
+          <div data-scroll data-scroll-direction="horizontal">Writer</div>
+          <div
+            data-scroll
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+          >
+            Crafter
+          </div>
+        </div>
+        <!-- </h1> -->
+      </section>
+
+      <section data-scroll-section>
+        <h1 data-scroll>What's up?</h1>
+        <p data-scroll data-scroll-speed="2">😬</p>
+      </section>
+    </div>
+  </body>
 </html>
