@@ -66,3 +66,22 @@ section {
   width: 35vw;
   color: #190605;
 }
+
+.cloud-color {
+  filter: invert(68%) sepia(23%) saturate(272%) hue-rotate(115deg)
+    brightness(89%) contrast(86%);
+}
+
+.cloud {
+  width: 20rem;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+.cloud-container {
+  /* height: 100vh;
+  width: 100vh; */
+  position: relative;
+  top: -5rem;
+  left: -25rem;
+}
