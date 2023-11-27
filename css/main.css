@@ -14,7 +14,7 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: #f2dfe0;
+  background-color: #e3c8da;
 }
 
 section {
@@ -37,11 +37,13 @@ section {
   margin-bottom: -10rem;
   color: #632a50;
 }
+
 .name-letters div {
-  position: relative;
+  position: static;
 }
-.name-letters div:nth-child(2) {
-  top: 1rem;
+
+/* .name-letters div:nth-child(2) {
+  top: 1.13rem;
 }
 .name-letters div:nth-child(3) {
   top: -0.6rem;
@@ -54,22 +56,23 @@ section {
 }
 .name-letters div:nth-child(6) {
   top: -0.3rem;
-}
+} */
 
 .identifiers div {
   /* padding-left: 3.5rem; */
 }
 
 .identifiers {
-  top: -10rem;
+  position: relative;
+  top: -15rem;
   font-size: 1.7rem;
-  width: 35vw;
-  color: #190605;
+  width: 30vw;
+  color: #1f491a;
 }
 
 .cloud-color {
-  filter: invert(68%) sepia(23%) saturate(272%) hue-rotate(115deg)
-    brightness(89%) contrast(86%);
+  filter: invert(46%) sepia(12%) saturate(1161%) hue-rotate(267deg)
+    brightness(102%) contrast(87%);
 }
 
 .cloud {
@@ -82,6 +85,75 @@ section {
   /* height: 100vh;
   width: 100vh; */
   position: relative;
-  top: -5rem;
-  left: -25rem;
+  z-index: -1;
+}
+
+.cloud-container:hover {
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.cloud-one {
+  top: -30rem;
+  left: 12rem;
+}
+
+.cloud-two {
+  top: -23rem;
+  left: 25rem;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 25% {
+    transform: rotate(25deg);
+  } */
+  50% {
+    transform: rotate(-5deg);
+  }
+  /* 75% {
+    transform: rotate(-25deg);
+  } */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translate(0, 10px);
+    height: 5rem;
+  }
+  100% {
+    transform: translate(0, 50px);
+    height: 5rem;
+  }
+}
+.rain-container {
+  /* height: 100vh;
+    width: 100vh; */
+  position: relative;
+  z-index: -1;
+}
+
+.rain-two {
+  top: -10rem;
+  left: -27rem;
+  /* height: 5rem; */
+  display: none;
+}
+.cloud-container:hover + .rain-two {
+  display: block;
+  animation: raindrop;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 5rem;
+}
+
+.rain-color {
+  filter: invert(19%) sepia(25%) saturate(2379%) hue-rotate(244deg)
+    brightness(91%) contrast(97%);
 }
