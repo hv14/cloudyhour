@@ -28,19 +28,21 @@ section {
 }
 
 .title {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .name-letters {
   font-size: clamp(5.5rem, 15vw, 12rem);
   font-family: "CloudDancer";
   margin-bottom: -10rem;
   color: #632a50;
+  position: relative;
 }
 
-.name-letters div {
+/* .name-letters div {
   position: static;
-}
+} */
 
 /* .name-letters div:nth-child(2) {
   top: 1.13rem;
@@ -59,15 +61,17 @@ section {
 } */
 
 .identifiers div {
-  /* padding-left: 3.5rem; */
+  margin-right: 3.5rem;
 }
 
 .identifiers {
-  position: relative;
-  top: -15rem;
+  position: absolute;
+  top: 25rem;
+  left: 49rem;
   font-size: 1.7rem;
-  width: 30vw;
+  /* width: 100%; */
   color: #1f491a;
+  font-family: "Time";
 }
 
 .cloud-color {
@@ -84,7 +88,7 @@ section {
 .cloud-container {
   /* height: 100vh;
   width: 100vh; */
-  position: relative;
+  position: absolute;
   z-index: -1;
 }
 
@@ -95,13 +99,13 @@ section {
 }
 
 .cloud-one {
-  top: -30rem;
-  left: 12rem;
+  top: 20rem;
+  left: 25rem;
 }
 
 .cloud-two {
-  top: -23rem;
-  left: 25rem;
+  top: 9rem;
+  left: 77rem;
 }
 
 @keyframes shake {
