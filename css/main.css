@@ -14,7 +14,7 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: #e3c8da;
+  /* background-color: #e3c8da; */
 }
 
 section {
@@ -36,7 +36,8 @@ section {
   font-size: clamp(5.5rem, 15vw, 12rem);
   font-family: "CloudDancer";
   margin-bottom: -10rem;
-  color: #632a50;
+  /* color: #632a50; */
+  color: black;
   position: relative;
 }
 
@@ -81,31 +82,46 @@ section {
 
 .cloud {
   width: 20rem;
-  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
-  animation: 3s ease 0s normal forwards 1 fadein;
+  /* -webkit-animation: 3s ease 0s normal forwards 1 fadein; */
+  /* animation: 3s ease 0s normal forwards 1 fadein; */
+  animation: passingby 14s infinite;
 }
 
 .cloud-container {
   /* height: 100vh;
   width: 100vh; */
-  position: absolute;
-  z-index: -1;
+  /* position: absolute;
+  z-index: -1; */
+  display: flex;
 }
 
-.cloud-container:hover {
+/* .cloud-container:hover {
   animation-name: shake;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-}
+} */
 
 .cloud-one {
   top: 20rem;
   left: 25rem;
+  animation: passingby 14s infinite;
 }
 
 .cloud-two {
   top: 9rem;
   left: 77rem;
+}
+
+@keyframes passingby {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 50px;
+  }
+  100% {
+    left: 100px;
+  }
 }
 
 @keyframes shake {
